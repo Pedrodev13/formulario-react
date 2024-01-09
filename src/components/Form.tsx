@@ -35,7 +35,7 @@ export const Form = () => {
 }
 
     return (
-        <form className="flex flex-col gap-3" onSubmit={handlleSubmit}>
+        <form className="flex flex-col gap-3 " onSubmit={handlleSubmit}>
             <div className="flex flex-col">
                 <label className="text-sm" htmlFor="name">Nome:</label>
                 <input value={name} onChange={(e) => setName(e.target.value)} type="text" placeholder="Digite seu nome" className="rounded-lg py-2 px-2 text-sm placeholder:tet-sm placeholder:text-stone-400"/>
