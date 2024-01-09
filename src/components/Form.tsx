@@ -13,7 +13,7 @@ export const Form = () => {
     const handlleSubmit = (e: FormEvent) => {
         e.preventDefault();
         setErrors(null);
-        alert('Obrigado por se inscrever!')
+        
 
         const data: Users = {
             name,
@@ -27,6 +27,7 @@ export const Form = () => {
         setErrors(validateErrors);
         return;
     }
+    alert('Obrigado por se inscrever!')
 
     setName('')
     setEmail('')
